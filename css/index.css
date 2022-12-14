@@ -67,6 +67,9 @@ footer.page-footer {
   margin-left: 0px;
   margin-right: 0px;
 }
+#card-footer {
+  margin: auto;
+}
 
 .section {
   padding-top: 4vw;
@@ -93,4 +96,8 @@ footer.page-footer {
   color: #ff9800 !important;
   font-weight: 500;
   font-size: 18px;
+}
+#texto {
+  color: #ff9800 !important;
+  font-weight: 500;
 }
