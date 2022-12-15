@@ -65,6 +65,22 @@
         O carro e o cachorro vão perambular pelo mapa, se eles colidirem com
         você você voltara para a posição inical e vai perder uma vida.
       </p>
+      <!--vida: pilha, frasco com vacina, carro tiram vida -->
+      <!-- da pontos:lixo reciclavel-->
+      <!-- tira ponto: lixo organico -->
+      <h3 id="texto" class = "center">Itens</h3>
+      <p>Itens que tiram vida</p>
+      <div class="carousel">
+      <a class="carousel-item"><img src="img\img-jogo\seringa.png"></a>
+      <a class="carousel-item"><img src="img\img-jogo\seringa2.png"></a>
+      <a class="carousel-item"><img src="img\img-jogo\pilha.png"></a>
+
+      </div>
+
+      <div class="carousel">
+        <a class="carousel-item"><img src="img\img-jogo\banana.png"></a>
+        <a class="carousel-item"><img src="img\img-jogo\banana.png"></a>
+      </div>
     </div>
 
     <div class="container">
@@ -213,6 +229,21 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel({
+    duration:1000,
+    shift: 100
+    });
+  });
+    </script>
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
